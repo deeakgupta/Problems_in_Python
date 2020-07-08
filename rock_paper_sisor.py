@@ -8,9 +8,9 @@ def user_choice(n):
         n='Paper'
     else:
         n= 'Sisor'
-    print(f'Your Choise is -> {n}')
+    print(f'Your Choice is -> {n}')
     m = random.choice(['Rock','Paper','Sisor'])
-    print(f'Machin Choise is -> {m}')
+    print(f'Machine Choice is -> {m}')
 
     if(n==m):
         print('its tie ')
@@ -36,11 +36,11 @@ def user_choice(n):
 
 def start():
     print(f'Welcome to rock paper sisor')
-    n = input("R=Rock\nP=Papor\nS=Sisor\nenter youre choice :")
+    n = input("R=Rock\nP=Paper\nS=Sisor\nenter your choice :").capitalize() 
     if(n=='R' or n=='P' or n== 'S'):
         user_choice(n)
     else:
-        print("enter a proper choce")
+        print("enter a proper choice")
     return n
 
 start()
